@@ -29,6 +29,10 @@ export class BoardsService {
   //   this.boards.push(board);
   //   return board
   // }
+    async getAllBoard(): Promise<Board[]>{
+      return this.boardRepository.find();
+    }
+
 
     async createBoard(createBoardDto: CreateBoardDto): Promise<Board> {
       return this.boardRepository.createBoard(createBoardDto);

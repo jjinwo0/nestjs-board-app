@@ -13,6 +13,10 @@ export class BoardsController {
   // getAllBoards() {
   //   return this.boardsService.getAllBoards();
   // }
+  @Get()
+  getAllBoards(){
+    return this.boardsService.getAllBoard();
+  }
 
   // @Post('/')
   // @UsePipes(ValidationPipe)
