@@ -2,10 +2,10 @@ import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 
 export const typeORMConfig: TypeOrmModuleOptions = {
     type: 'mysql',
-    host: 'localhost',
+    host: '127.0.0.1',
     port: 3306,
     username: 'root',
-    password: 'park3587rs',
+    password: '35872468',
     database: 'board-app',
 
     //엔티티를 이용하여 데이터베이스 테이블 생성
